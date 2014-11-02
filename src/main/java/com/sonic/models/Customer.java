@@ -1,11 +1,7 @@
 package com.sonic.models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by sadra on 10/30/14.
@@ -19,13 +15,9 @@ public class Customer {
     @Column(name="id")
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
-
     private String first_name;
-
     private String last_name;
-
     private String address;
-
     private String telephone;
 
     public int getId() {
